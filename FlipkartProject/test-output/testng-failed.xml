@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.testScripts.SearchTv">
+        <methods>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="tv"/>
+        </methods>
+      </class> <!-- com.testScripts.SearchTv -->
+      <class name="com.testScripts.SearchingMethod">
+        <methods>
+          <include name="logout"/>
+          <include name="mobile"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.testScripts.SearchingMethod -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
