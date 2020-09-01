@@ -13,11 +13,12 @@ public class SearchingMethod extends BasicOperations
 
 {
   @Test
-  public static void mobile() throws EncryptedDocumentException, IOException
+  public static void mobile() throws EncryptedDocumentException, IOException, InterruptedException
   {
 	  HomePage hp=new HomePage(driver);
 	String search_value = ExcelData.excledata("HomeScreen",1,0);
 	hp.searching(search_value);
+	Thread.sleep(5000);
 	hp.searchbu();
 	
 	
